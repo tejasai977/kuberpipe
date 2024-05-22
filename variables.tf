@@ -1,6 +1,6 @@
 variable "rgname" {
     type = string
-    default = "firstrg"  
+    default = "kuberg"  
 }
 
 variable "rglocation" {
