@@ -28,6 +28,7 @@ resource "azurerm_virtual_machine" "vm1" {
   resource_group_name   = azurerm_resource_group.creatrg.name
   network_interface_ids = [azurerm_network_interface.nic_vm1.id]
   vm_size               = "Standard_B2s"
+  delete_os_disk_on_termination = "true"
 
   storage_os_disk {
     name              = "example_os_disk1"
@@ -60,6 +61,7 @@ resource "azurerm_virtual_machine" "vm2" {
   resource_group_name   = azurerm_resource_group.creatrg.name
   network_interface_ids = [azurerm_network_interface.nic_vm2.id]
   vm_size               = "Standard_B2s"
+  delete_os_disk_on_termination = "true"
 
   storage_os_disk {
     name              = "example_os_disk2"
